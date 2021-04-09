@@ -6,9 +6,10 @@ OsensaMatlab (by [Hisham Assi](https://github.com/abuAnat)) tells Matlab users h
   ```
   osensapy = Python module with no properties.
   <module 'osensapy' from 'path\\ to\\ osensapy\\ __init__.py'>
-  ```
+  ``` 
+  Go to this `osensapy` folder, first, delete the file `\_\_init\_\_.py`, then rename the file `osensapy.py` to `\_\_init\_\_.py`
 
-`osensapy.serial_get_portlist()`
+* `osensapy.serial_get_portlist()`
 
 COM1
 COM3
