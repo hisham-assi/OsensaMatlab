@@ -7,12 +7,12 @@ OsensaMatlab (by [Hisham Assi](https://github.com/abuAnat)) tells Matlab users h
   osensapy = Python module with no properties.
   <module 'osensapy' from 'path\\ to\\ osensapy\\ __init__.py'>
   ``` 
-  Go to this `osensapy` folder, first, delete the file `\_\_init\_\_.py`, then rename the file `osensapy.py` to `\_\_init\_\_.py`
-
-* `osensapy.serial_get_portlist()`
-
-COM1
-COM3
-COM4
+  Go to this `osensapy` folder, first, delete the file `__init__.py`, then rename the file `osensapy.py` to `__init__.py`
+* Now you can access the `Transmitter` calss methods by calling the Matlab function
+  ```
+  transmitter=get_osensa_transmitter(port_name)
+  ```
+  where `port_name` is the name of the serial port connected to Osensa transmitter (for example `'COM5'`)
+* All the the function descibe in osensapy manual 
 
 x.fast_batch(uint16(3))
