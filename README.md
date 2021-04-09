@@ -8,22 +8,21 @@ OsensaMatlab (by [Hisham Assi](https://github.com/abuAnat)) tells Matlab users h
   <module 'osensapy' from 'path\\ to\\ osensapy\\ __init__.py'>
   ``` 
   Go to this `osensapy` folder, first, delete the file `__init__.py`, then rename the file `osensapy.py` to `__init__.py`
-  
 * Now you can access the `Transmitter` calss methods by calling the Matlab function
   ```
   transmitter=get_osensa_transmitter(port_name)
   ```
   where `port_name` is the name of the serial port connected to Osensa transmitter (for example `'COM5'`)
 * All the the Transmitter function descibe in [OsensaPy Guid ](https://github.com/abuAnat/OsensaMatlab/blob/main/OsensaPy%20Guide.pdf), namley, the ones with format `transmitter.some_function()` can be accessed with same way.
- For eaxample to read the transmitter serial number, one needs to use Matlab command
- ```
- transmitter.read_serial_number()
- ```
- Note the command `transmitter.fast_batch(3)` needs to be, in Matlab: 
- ```
- transmitter.fast_batch(uint16(3))
- ```
- Don't forget to close the transmitter when you are done
- ```
- transmitter.close()
- ```
+  For eaxample to read the transmitter serial number, one needs to use Matlab command
+  ```
+  transmitter.read_serial_number()
+  ```
+  Note the command `transmitter.fast_batch(3)` needs to be, in Matlab: 
+  ```
+  transmitter.fast_batch(uint16(3))
+  ```
+* Don't forget to close the transmitter when you are done
+  ```
+  transmitter.close()
+  ```
